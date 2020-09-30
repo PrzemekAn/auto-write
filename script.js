@@ -10,7 +10,7 @@ let index = 0;
 const addLetter = () => {
     spnText.textContent += text[index];
     index++;
-    if (index > text.length) {
+    if (index == text.length) {
         clearInterval(timer);
     }
 }
